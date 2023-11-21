@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+<div class="container weather-container">
+    <h2>Weather Information</h2>
+
+    <article>
+        <header>
+            <h3>Kolkata</h3>
+        </header>
+        <div class="weather-data">
+            <p>Hourly Temperature: <span id="hourlyTemp" th:text="${ht}"></span></p>
+            <p>Apparent Temperature: <span id="apparentTemp" th:text="${at}"></span></p>
+        </div>
+        <footer>
+            <p>All values are in <strong>Fahrenheit</strong></p>
+        </footer>
+    </article>
+    <p>Made by <strong>Ayush Ghosal</strong></p>
+</div>
+</body>
+</html>
